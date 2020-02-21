@@ -1,0 +1,11 @@
+publish:
+    - app:
+          name: 微信
+          release_time: 20180101
+          versions: 1.0
+    - app:
+        name: 支付宝
+        release_time: 20180101
+        versions: 1.0
+develope:
+  - app
