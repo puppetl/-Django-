@@ -15,7 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 print('basedir', BASE_DIR)
-
+SESSION_COOKIE_AGE = 60 * 1
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app1.apps.App1Config',
-    'juheapp.apps.JuheappConfig'
+    'juheapp.apps.JuheappConfig',
+    # 'django_crontab'
 ]
 
 MIDDLEWARE = [
@@ -48,6 +49,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'mymiddleware.mymiddleware.TestMiddle',
+    'mymiddleware.mymiddleware.StatisticsMiddle',
 ]
 
 ROOT_URLCONF = 'helloword.urls'
@@ -73,11 +76,29 @@ WSGI_APPLICATION = 'helloword.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     },
+#     'slave': {
+#         'ENGINE':'django.db.backends.mysql',
+#         'NAME':'user_dj',
+#         'USER':'root',
+#         'PASSWORD':'wodeniang71md',
+#         'HOST':'127.0.0.1',
+#         'PORT':'3306',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'user_dj',
+        'USER': 'root',
+        'PASSWORD': 'wodeniang71md',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    },
 }
 
 # Password validation
@@ -115,3 +136,108 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 BASE_DIR = 'D:\pychar\Djangostudy\helloword\\'
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            # 'format': '[%(asctime)s] [%(levelname)s] %(message)s',
+            'format': '%(asctime)s, [%(threadName)s: %(thread)d]'
+                      '%(pathname)s, %(funcName)s, %(lineno)d, %(levelname)s %(message)s'
+        },
+        'statistics': {
+            'format': '%(asctime)s,%(lineno)d, %(levelname)s %(message)s'
+        }
+    },
+    # 'filters': {
+    #     'test': {
+    #         "()": 'ops.TestFilter'
+    #     }
+    # },
+    'handlers': {
+        'console': {
+            # 'level': 'INFO',
+            # 'class': 'logging.StreamHandler',
+            # 'formatter': 'verbose'
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose'
+        },
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs.log'),
+            'maxBytes': 1024 * 1024 * 1024,
+            'backupCount': 1,
+            'formatter': 'verbose',
+            'encoding': 'utf-8'
+            # 'level': 'INFO',
+            # 'class': 'logging.FileHandler',
+            # 'filename': os.path.join(BASE_DIR, 'logs.log'),
+            # 'formatter': 'verbose'
+        },
+        'statistics': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'statistics.log'),
+            'maxBytes': 1024 * 1024 * 5,
+            'backupCount': 1,
+            'formatter': 'statistics',
+            'encoding': 'utf-8'
+            # 'level': 'INFO',
+            # 'class': 'logging.FileHandler',
+            # 'filename': os.path.join(BASE_DIR, 'logs.log'),
+            # 'formatter': 'verbose'
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            # 'filters': ['test'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'statistics': {
+            'handlers': ['statistics'],
+            'level': 'DEBUG'
+        }
+    }
+}
+
+CACHES = {
+    'default': {
+        # 1. MemCache
+        # 'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        # 'LOCATION': '127.0.0.1:11211',
+
+        # 2. DB Cache
+        # 'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        # 'LOCATION': 'my_cache_table',
+
+        # 3. Filesystem Cache
+        # 'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        # 'LOCATION': '/var/tmp/django_cache',
+
+        # 4. Local Mem Cache
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'backend-cache'
+    }
+}
+
+CRONJOBS = [
+    ('*/2 * * * *', 'cron.jobs.dome')
+]
+
+# Email config
+# QQ邮箱 SMTP 服务器地址
+EMAIL_HOST = 'smtp.qq.com'
+# 端口  附加码25
+EMAIL_PORT = 465
+# 发送邮件的邮箱
+EMAIL_HOST_USER = '1977681614@qq.com'
+# 在邮箱中设置的客户端授INSTALLED_APPS权密码
+EMAIL_HOST_PASSWORD = 'yvjrdtzchuqmbfje'
+# 开启TLS
+EMAIL_USE_TLS = True
+# 收件人看到的发件人
+EMAIL_FROM = '1977681614@qq.com'

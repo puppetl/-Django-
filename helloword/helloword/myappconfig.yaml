@@ -7,5 +7,7 @@ publish:
         name: 支付宝
         release_time: 20180101
         versions: 1.0
+    - app:
+        name: 精品段子
 develope:
   - app

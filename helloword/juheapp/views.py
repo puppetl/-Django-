@@ -13,3 +13,10 @@ def hello_juhe(request):
     else:
         return HttpResponse('没有找到数据')
 
+def hello_joke(request):
+    url = 'http://v.juhe.cn/joke/content/list.php?sort=asc&page=5&pagesize=5&time=1418816999&key=265e5edbc0f1cf02b5dba5788963a771'
+    res = request.get(url)
+    if res.status_code == 200:
+        return HttpResponse(res.text)
+    else:
+        return HttpResponse('没有找到数据')

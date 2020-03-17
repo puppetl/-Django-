@@ -1,0 +1,11 @@
+2020-03-16 11:19:56,539, [MainThread: 5372]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
+2020-03-16 11:20:03,467, [MainThread: 1212]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
+2020-03-16 11:20:46,064, [MainThread: 1212]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, trigger_reload, 217, INFO D:\pychar\Djangostudy\helloword\helloword\settings.py changed, reloading.
+2020-03-16 11:20:52,555, [MainThread: 12508]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
+2020-03-16 11:28:19,951, [MainThread: 12428]D:/pychar/Djangostudy/helloword/ceshidaima.py, logdemo, 11, INFO slkafakljfesa
+2020-03-16 11:28:19,952, [MainThread: 12428]D:/pychar/Djangostudy/helloword/ceshidaima.py, logdemo, 12, INFO fwefw efwe lc ewf
+2020-03-16 11:28:19,952, [MainThread: 12428]D:/pychar/Djangostudy/helloword/ceshidaima.py, logdemo, 13, INFO ef fefe few wef
+2020-03-16 11:35:31,779, [MainThread: 12508]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, trigger_reload, 217, INFO D:\pychar\Djangostudy\helloword\helloword\settings.py changed, reloading.
+2020-03-16 11:35:32,524, [MainThread: 12968]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
+2020-03-16 11:43:38,186, [MainThread: 12968]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, trigger_reload, 217, INFO D:\pychar\Djangostudy\helloword\helloword\settings.py changed, reloading.
+2020-03-16 11:43:39,172, [MainThread: 7012]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
