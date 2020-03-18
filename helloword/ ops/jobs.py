@@ -18,7 +18,6 @@ def log_analyse():
             line = line.strip()
             line_dict = eval(line)
             print(13131313,line_dict)  # 测试数据字典
-            # 老师的分析
             # 记录数据
             # xxx接口1    平均耗时    最高耗时    最低耗时    出现次数
             # xxx接口2    平均耗时    最高耗时    最低耗时    出现次数
@@ -69,11 +68,7 @@ def send_email():
     server.sendmail(settings.EMAIL_FROM, receivers, msg.as_string())
     server.close()
 
-"""
-1,你了解那些算法???
-2,
-3,4,5
-"""
+
 
 if __name__ == '__main__':
 
