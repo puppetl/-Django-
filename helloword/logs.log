@@ -9,3 +9,55 @@
 2020-03-16 11:35:32,524, [MainThread: 12968]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
 2020-03-16 11:43:38,186, [MainThread: 12968]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, trigger_reload, 217, INFO D:\pychar\Djangostudy\helloword\helloword\settings.py changed, reloading.
 2020-03-16 11:43:39,172, [MainThread: 7012]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
+2020-03-17 15:44:15,207, [MainThread: 8060]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
+2020-03-17 16:16:50,177, [MainThread: 19312]D:/pychar/Djangostudy/helloword/ceshidaima.py, logdemo, 11, INFO slkafakljfesa
+2020-03-17 16:16:50,177, [MainThread: 19312]D:/pychar/Djangostudy/helloword/ceshidaima.py, logdemo, 12, INFO fwefw efwe lc ewf
+2020-03-17 16:16:50,178, [MainThread: 19312]D:/pychar/Djangostudy/helloword/ceshidaima.py, logdemo, 13, INFO ef fefe few wef
+2020-03-17 16:16:58,717, [MainThread: 2860]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
+2020-03-17 16:17:07,420, [Thread-1: 16840]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET / HTTP/1.1" 200 158
+2020-03-17 16:17:07,578, [Thread-1: 16840]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /favicon.ico HTTP/1.1" 200 158
+2020-03-17 16:17:22,630, [Thread-1: 16840]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /index/show_aticle/ HTTP/1.1" 200 1865
+2020-03-17 16:17:22,968, [Thread-1: 16840]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /favicon.ico HTTP/1.1" 200 158
+2020-03-17 21:58:35,118, [MainThread: 2860]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, trigger_reload, 217, INFO D:\pychar\Djangostudy\helloword\helloword\settings.py changed, reloading.
+2020-03-17 21:58:37,246, [MainThread: 6892]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
+2020-03-17 21:59:10,198, [MainThread: 6892]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, trigger_reload, 217, INFO D:\pychar\Djangostudy\helloword\helloword\settings.py changed, reloading.
+2020-03-17 21:59:11,156, [MainThread: 18744]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
+2020-03-17 21:59:46,786, [MainThread: 18744]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, trigger_reload, 217, INFO D:\pychar\Djangostudy\helloword\helloword\settings.py changed, reloading.
+2020-03-17 21:59:47,665, [MainThread: 10132]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
+2020-03-17 22:01:50,119, [MainThread: 17820]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\autoreload.py, run_with_reloader, 597, INFO Watching for file changes with StatReloader
+2020-03-17 22:01:52,627, [Thread-1: 17756]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET / HTTP/1.1" 200 158
+2020-03-17 22:01:52,816, [Thread-1: 17756]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /favicon.ico HTTP/1.1" 200 158
+2020-03-17 22:01:57,314, [Thread-1: 17756]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /index/show_aticle/ HTTP/1.1" 200 1865
+2020-03-17 22:01:57,390, [Thread-1: 17756]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /favicon.ico HTTP/1.1" 200 158
+2020-03-17 22:02:00,059, [Thread-1: 17756]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /favicon.ico HTTP/1.1" 200 158
+2020-03-17 22:02:01,184, [Thread-1: 17756]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /favicon.ico HTTP/1.1" 200 158
+2020-03-17 22:02:01,966, [Thread-1: 17756]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /favicon.ico HTTP/1.1" 200 158
+2020-03-17 22:02:02,986, [Thread-1: 17756]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /favicon.ico HTTP/1.1" 200 158
+2020-03-17 22:02:04,399, [Thread-1: 17756]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /favicon.ico HTTP/1.1" 200 158
+2020-03-17 22:19:01,184, [Thread-3: 14060]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /favicon.ico HTTP/1.1" 200 158
+2020-03-17 22:19:09,673, [Thread-3: 14060]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\log.py, log_response, 228, ERROR Internal Server Error: /index/show/3
+Traceback (most recent call last):
+  File "C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pychar\Djangostudy\helloword\app1\views.py", line 45, in bigso
+    section_list = curr_article.content.split('\n')
+AttributeError: 'NoneType' object has no attribute 'content'
+2020-03-17 22:19:09,676, [Thread-3: 14060]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, ERROR "GET /index/show/3 HTTP/1.1" 500 27
+2020-03-17 22:19:09,697, [Thread-3: 14060]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /favicon.ico HTTP/1.1" 200 158
+2020-03-17 22:19:18,082, [Thread-3: 14060]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\log.py, log_response, 228, ERROR Internal Server Error: /index/show/1
+Traceback (most recent call last):
+  File "C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pychar\Djangostudy\helloword\app1\views.py", line 45, in bigso
+    section_list = curr_article.content.split('\n')
+AttributeError: 'NoneType' object has no attribute 'content'
+2020-03-17 22:19:18,083, [Thread-3: 14060]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, ERROR "GET /index/show/1 HTTP/1.1" 500 27
+2020-03-17 22:19:18,103, [Thread-3: 14060]C:\Users\19776\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\servers\basehttp.py, log_message, 154, INFO "GET /favicon.ico HTTP/1.1" 200 158

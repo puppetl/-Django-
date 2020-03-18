@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app1.apps.App1Config',
     'juheapp.apps.JuheappConfig',
-    # 'django_crontab'
+    'django_crontab'
 ]
 
 MIDDLEWARE = [
@@ -146,7 +146,9 @@ LOGGING = {
                       '%(pathname)s, %(funcName)s, %(lineno)d, %(levelname)s %(message)s'
         },
         'statistics': {
-            'format': '%(asctime)s,%(lineno)d, %(levelname)s %(message)s'
+            # 这里是不是要删里面没数据了呀,我微信通话好
+            # 'format': '%(asctime)s,%(lineno)d, %(levelname)s %(message)s'
+            'format': '%(message)s'
         }
     },
     # 'filters': {
